@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>to do list</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"  crossorigin="anonymous"> -->
+
+    <!-- Bootstrap CDN -->
+    <!-- <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+    
+    <script  src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <div id="container"> <!-- Keep elements inside the container-->
+        <h1> CrystalsCollector</h1>
+        <P>
+            You will be given a random number at the start of the game.
+        </P>
+        <P>
+            There are four crystals below. By clicking on a crystal you will add a
+            specific amount of points to your total score.
+        </P>
+        <p>
+            You win the game by matching your total score to random number, you lose 
+            the game if your total socre goes above the random number.
+        </p>
+        <p> The values of the crystals are hidden from you until you click on it </p>
+        <p>
+            Each time when the game starts, the game will change the the values of each crystals and random number.
+        </p>
+
+        <br>
+        <!-- Random number: to be updated each time new game starts -->
+        <div>
+            <h3> <span id="randomNumber"> </span> </h3>
+        </div>        
+
+        <br>
+        <div class="winloss">
+            <!-- Win and losses: to be updated each time new game starts -->
+            <h3> <span id="winlossTracker"> </span> </h3>
+            <h3> Wins: <span id="win"> </span> </h3>
+            <h3> Losses: <span id="loss"> </span> </h3>
+        </div>
+
+        <br>
+        <div class="crystals">
+            <!-- Crystals: Values hidden -->
+            <img id="crystal1" src="images/crystal1.jpg" alt="button 1">
+            <img id="crystal2" src="images/crystal2.jpg" alt="button 2">
+            <img id="crystal3" src="images/crystal3.jpg" alt="button 3">
+            <img id="crystal4" src="images/crystal4.jpg" alt="button 4">      
+        </div>        
+
+        <br>
+        <div>
+            <!-- Total score: to be updated anytime button is clicked -->
+            <h3 id="resultTracker"> Your total Score</h3>
+            <h3> <span id="totalScore"></span> </h3>
+        </div>
+
+    </div>
+    
+    <script src="javascript/game.js"></script>
+</body>
+</html>

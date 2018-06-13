@@ -1,0 +1,52 @@
+#container {
+    color: white;
+    background: #1e130c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container{
+    width: 360px;
+    box-shadow: 0 0 3 rgba(0, 0, 0,0.1);
+    padding: 10px;
+    border: 2px solid green;
+    margin: 5px auto;
+}
+
+h1{
+    margin: 0;
+    color: gold;
+}
+
+#randomNumber{
+    width: 30%; 
+    background: lightskyblue;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.winloss{
+    background: lightskyblue;
+    width: 30%;
+    padding: 10px;
+    margin: 0; 
+}
+
+.crystals{
+    width: 100%;
+}
+
+#resultTracker{
+    background: lightskyblue;
+    width: 60%;
+    padding: 20px;
+    margin: 0;
+}
+
+#totalScore{
+    background: lightskyblue;
+    padding: 20px;
+    padding-right: 60px;
+    border: 2px solid gold;
+    margin: 0;
+}
